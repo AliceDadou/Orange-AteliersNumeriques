@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipuler la souris - Exercice 4</title>
-    <link rel="stylesheet" href="../style/main.css">
-    <link rel="shortcut icon" type="image/x-icon" href="sources/images/orange-logo.svg">
+    <link rel="stylesheet" href="../style/main.css">    
+    <link rel="shortcut icon" type="image/x-icon" href="../images/orange-logo.svg">
 </head>
 
 <body>
@@ -39,7 +39,7 @@
         <div class="info-section">
             <h2 class="info-section__title">🎯 Nouveau défi</h2>
             <p class="info-section__text">
-                Cette fois, le chiffre 5 est bien caché parmi d'autres chiffres. Déplacez votre souris 
+                Cette fois, le chiffre 5 est bien caché parmi d'autres chiffres. Déplacez votre souris
                 pour le trouver et attendez que le curseur se transforme en main avant de cliquer.
             </p>
         </div>
@@ -58,7 +58,7 @@
 
                     <div class="step">
                         <strong>Cherchez le chiffre 5 :</strong><br>
-                        Plusieurs chiffres sont affichés, mais un seul est le bon. 
+                        Plusieurs chiffres sont affichés, mais un seul est le bon.
                         Le vrai 5 est orange et cliquable.
                     </div>
 
@@ -69,7 +69,7 @@
 
                     <div class="step">
                         <strong>Cliquez :</strong><br>
-                        Une fois le curseur en forme de main, cliquez avec votre index 
+                        Une fois le curseur en forme de main, cliquez avec votre index
                         sur le bouton gauche de la souris.
                     </div>
                 </div>
@@ -87,31 +87,47 @@
             <div class="card">
                 <h2 class="card__title">Zone de recherche</h2>
 
-                <div class="search-area">
+                <div
+                    style="position: relative; min-height: 400px; background: linear-gradient(135deg, #fff3e6 0%, #ffe0b2 100%);border-radius: var(--radius-md);padding: var(--spacing-lg);margin: var(--spacing-md) 0;">
                     <!-- Chiffres leurres - disposition aléatoire -->
-                    <span class="decoy-number" style="top: 18%; left: 12%;">3</span>
-                    <span class="decoy-number" style="top: 65%; right: 25%;">7</span>
-                    <span class="decoy-number" style="top: 42%; left: 35%;">2</span>
-                    <span class="decoy-number" style="bottom: 28%; left: 8%;">9</span>
-                    <span class="decoy-number" style="top: 72%; left: 15%;">4</span>
-                    <span class="decoy-number" style="bottom: 48%; right: 38%;">1</span>
-                    <span class="decoy-number" style="top: 15%; left: 58%;">8</span>
-                    <span class="decoy-number" style="bottom: 22%; left: 52%;">6</span>
-                    <span class="decoy-number" style="top: 38%; right: 45%;">3</span>
-                    <span class="decoy-number" style="bottom: 58%; right: 18%;">7</span>
-                    
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 18%; left: 12%;">3</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 65%; right: 25%;">7</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 42%; left: 35%;">2</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;bottom: 28%; left: 8%;">9</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 72%; left: 15%;">4</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;bottom: 48%; right: 38%;">1</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 15%; left: 58%;">8</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;bottom: 22%; left: 52%;">6</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 38%; right: 45%;">3</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;bottom: 58%; right: 18%;">7</span>
+
                     <!-- Faux 5 (leurres) - disposition aléatoire -->
-                    <span class="decoy-five" style="top: 12%; right: 52%;">5</span>
-                    <span class="decoy-five" style="bottom: 42%; left: 28%;">5</span>
-                    <span class="decoy-five" style="top: 55%; right: 32%;">5</span>
-                    <span class="decoy-five" style="top: 32%; left: 18%;">5</span>
-                    <span class="decoy-five" style="bottom: 18%; right: 48%;">5</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 12%; right: 52%;">5</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;bottom: 42%; left: 28%;">5</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 55%; right: 32%;">5</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;top: 32%; left: 18%;">5</span>
+                    <span
+                        style="position: absolute;font-size: 24px;font-weight: 600;color: var(--text-light);user-select: none;pointer-events: none;bottom: 18%; right: 48%;">5</span>
 
                     <!-- Le vrai chiffre 5 cliquable - caché dans le coin inférieur droit -->
-                    <a href="manip-05.html" class="target-number" style="top: auto; left: auto; bottom: 8%; right: 8%; width: 55px; height: 55px; font-size: 26px; transform: none;">5</a>
+                    <a href="manip-05.html" class="card__number-button" style="position: absolute; bottom: 8%; right: 8%;">5</a>
                 </div>
 
-                <p class="visual-card__help-text">
+                <p class="card__help-text">
                     Déplacez votre souris pour explorer toute la zone
                 </p>
             </div>
